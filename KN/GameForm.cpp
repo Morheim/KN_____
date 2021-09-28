@@ -381,14 +381,14 @@ void KN::GameForm::SetPositionPlayer(Vector2 cell)
 		if (currentPlayer == Player1) {
 			//Делаем ход
 			if (!map.SetPosition(cell, player1.GetMark())) {
-				MessageBox::Show("Äàííàÿ ïîçèöèÿ çàíÿòà!", "Âíèìàíèå!");
+				MessageBox::Show("Данная позиция занета", "Внимание!");
 				return;
 			}
 		}
 		else {
 			//Делаем ход
 			if (!map.SetPosition(cell, player2.GetMark())) {
-				MessageBox::Show("Äàííàÿ ïîçèöèÿ çàíÿòà!", "Âíèìàíèå!");
+				MessageBox::Show("Данная позиция занета", "Внимание!");
 				return;
 			}
 		}
